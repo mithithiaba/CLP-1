@@ -1,0 +1,42 @@
+# Problem 01
+x= input('first number: ')
+y= input('second number: ')
+z= input('third number: ')
+
+
+if x>=y and x>=z:
+   print(x + ' is greater')
+if y>=x and y>=z:
+   print(y + ' is greater')
+if z>=y and z>=x:
+   print(z + ' is greater')
+
+# Problem 02
+def digcount(n):
+    n = abs(n)
+
+    if n == 0:
+        return 1
+
+    count = 0
+    while n > 0:
+        n //= 10
+        count += 1
+    return count
+
+def digsum(n):
+    n = abs(n)
+
+    total = 0
+    while n > 0:
+        total += n % 10
+        n //= 10
+    return total
+
+num = int(input("Enter an integer: "))
+
+count = digcount(num)
+total = digsum(num)
+
+print("Count: ", count)
+print("Sum: ", total)
