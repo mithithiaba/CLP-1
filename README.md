@@ -8,7 +8,4 @@ Problem 2: Digit Count and Digit Sum
 This program takes one integer as input and calculates:Total number of digits, Sum of all digits
 If the number is negative, it is treated as its absolute value
 
-How to Run:
-
-Save the Python file.
-Run using Dig count and sum.py 
+ 
